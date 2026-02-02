@@ -1,7 +1,7 @@
 # Overview
 During an assessment of the application’s account management functionality, I identified a moderate-severity Cross-Site Request Forgery (CSRF) vulnerability affecting the email change feature. The application allowed HTTP method overrides via the _method parameter, which, combined with the default SameSite=Lax cookie policy, enabled an attacker to change a victim’s email address through a crafted GET request.
 
-# Steps Undertaken
+# Methodology
 
 Step 1: Logged in with test credentials and analyzed requests for the email update functionality using Burp Suite.
 
